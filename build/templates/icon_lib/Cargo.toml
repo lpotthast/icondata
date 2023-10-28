@@ -14,5 +14,4 @@ rust-version = "1.60.0"
 [dependencies]
 icondata_core = "0.0.2"
 serde = { workspace = true, features = ["derive"], optional = true }
-strum = { version = "0.24", optional = true, features = ["derive"] }
-
+strum = { version = "0.25", optional = true, features = ["derive"] }
