@@ -38,7 +38,7 @@ impl CargoToml {
                     sn_version: Vec<(&'a str, String)>,
                 }
 
-                let (sn_features, sn_version): (Vec<_>, Vec<_>) = crate::Packages::get()?.iter().map(|package| {
+                let (sn_features, sn_version): (Vec<_>, Vec<_>) = Packages::get()?.iter().map(|package| {
                     let features = package
                         .icons()
                         .iter()
